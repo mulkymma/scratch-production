@@ -36,7 +36,7 @@ const workImages = [
     type: 'Lifestyle',
   },
   {
-    src: '/work/work%20image%206.jpeg',
+    src: '/work/work%20image%209.jpeg',
     title: 'The Everyday Edit',
     type: 'Brand Story',
   },
@@ -329,9 +329,9 @@ export default function Page() {
           </p>
 
           <div className="contact-details">
-            <a href="tel:+254712345678">
+            <a href="tel:+254787875823">
               <Phone />
-              <span>+254 712 345 678</span>
+              <span>+254 787875823</span>
             </a>
 
             <a
