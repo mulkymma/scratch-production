@@ -11,7 +11,7 @@ import {
 
 const workImages = [
   {
-    src: '/work/work%20image%201.jpeg',
+    src: '/work/work%20image%208.jpeg',
     title: 'Portraits in Motion',
     type: 'Photography',
   },
@@ -335,7 +335,7 @@ export default function Page() {
             </a>
 
             <a
-              href="https://wa.me/254712345678"
+              href="https://wa.me/254787875823"
               target="_blank"
               rel="noreferrer"
             >
@@ -460,6 +460,7 @@ export default function Page() {
             className="footer-logo"
           />
         </a>
+
         <p className="copyright">
           © Scratch Production 2026. All rights reserved.
         </p>
