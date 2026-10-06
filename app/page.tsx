@@ -406,47 +406,51 @@ export default function Page() {
           className="contact-form"
           onSubmit={handleSubmit}
         >
-          <label>
-            Name
-            <input
-              required
-              name="name"
-              placeholder="Your name"
-            />
-          </label>
+          {sent ? (
+            <p className="form-success" role="status">
+              Thank you for contacting us. We&apos;ll reach out to you soon.
+            </p>
+          ) : (
+            <>
+              <label>
+                Name
+                <input
+                  required
+                  name="name"
+                  placeholder="Your name"
+                />
+              </label>
 
-          <label>
-            Email
-            <input
-              required
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-            />
-          </label>
+              <label>
+                Email
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                />
+              </label>
 
-          <label>
-            Project details
-            <textarea
-              required
-              name="message"
-              placeholder="What are you working on?"
-              rows={4}
-            />
-          </label>
+              <label>
+                Project details
+                <textarea
+                  required
+                  name="message"
+                  placeholder="What are you working on?"
+                  rows={4}
+                />
+              </label>
 
-          <button
-            className="button button-light"
-            type="submit"
-            disabled={sending}
-          >
-            {sending
-              ? 'Sending...'
-              : sent
-              ? 'Message sent ✓'
-              : 'Send enquiry'}
-            <Send />
-          </button>
+              <button
+                className="button button-light"
+                type="submit"
+                disabled={sending}
+              >
+                {sending ? 'Sending...' : 'Send enquiry'}
+                <Send />
+              </button>
+            </>
+          )}
         </form>
       </section>
 
