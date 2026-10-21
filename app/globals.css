@@ -476,8 +476,7 @@ h2 em {
 
 .contact {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 100px;
+  grid-template-columns: 1fr;
   padding-top: 125px;
   padding-bottom: 125px;
 }
@@ -513,48 +512,6 @@ h2 em {
 .contact-details svg {
   width: 16px;
   height: 16px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-self: end;
-}
-
-.form-success {
-  margin: 0;
-  border-left: 3px solid var(--orange);
-  padding: 12px 0 12px 16px;
-  color: var(--ink);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.contact-form label {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.68rem;
-  font-weight: 800;
-}
-
-.contact-form input,
-.contact-form textarea {
-  border: 0;
-  border-bottom: 1px solid #bcb3a8;
-  background: transparent;
-  padding: 13px 0;
-  color: var(--ink);
-  resize: vertical;
-  outline: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--orange);
 }
 
 .footer {
